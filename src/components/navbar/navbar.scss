@@ -8,6 +8,7 @@
     position: fixed;
     top: 0;
     z-index: 2; // so that navbar fixed navbar will hover over sections
+    transition: all 1s ease;
 
     .wrapper {
         padding: 10px 30px;
@@ -59,9 +60,33 @@
                     width: 100%;
                     height: 3px;
                     background-color: $mainColour;
+                    transform-origin: left; // change rotation origin to left
+                    transition: all 1s ease;
                 }
             }
 
+        }
+    }
+
+    &.active {
+        background-color: $mainColour;
+        color: white;
+
+        .hamburger {
+
+            span {
+                &:first-child {
+                    background-color: white;
+                    transform: rotate(45deg);
+                }
+                &:nth-child(2) {
+                    opacity: 100%;
+                }
+                &:last-child {
+                    background-color: white;
+                    transform: rotate(-45deg);
+                }
+            }
         }
     }
 }

@@ -4,12 +4,14 @@ import Portfolio from "./components/portfolio/Portfolio";
 import Work from "./components/work/Work";
 import Contact from "./components/contact/Contact";
 import "./app.scss"
+import { useState } from "react";
 
 
 function App() {
+  const [menuOpen, setMenuOpen] = useState(false); // initial state of menu is closed (false)
   return (
     <div className="app">
-      <Navbar></Navbar>
+      <Navbar menuOpen={menuOpen} setMenuOpen={setMenuOpen}></Navbar>
       <div className="sections">
           <Intro></Intro>
           <Portfolio></Portfolio>
