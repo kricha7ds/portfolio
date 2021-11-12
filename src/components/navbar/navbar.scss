@@ -7,7 +7,7 @@
     color: $mainColour;
     position: fixed;
     top: 0;
-    z-index: 2; // so that navbar fixed navbar will hover over sections
+    z-index: 3; // so that fixed navbar will hover over sections
     transition: all 1s ease;
 
     .wrapper {
@@ -46,6 +46,10 @@
                     a {
                         text-decoration: none;
                         color: inherit;
+
+                        &:hover {
+                            font-weight: 500;
+                        }
                     }
                 }
             }
