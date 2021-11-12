@@ -4,7 +4,7 @@
     .sections {
         width: 100%;
         height: calc(100vh - 70px); // to account for height of the navbar (70px)
-        background-color: lightsalmon;
+        background-color: white;
         position: relative;
         top: 70px; // start after the 70px navbar
         scroll-snap-type: y mandatory; // handles snap scrolling
