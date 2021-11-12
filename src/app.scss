@@ -8,6 +8,7 @@
         position: relative;
         top: 70px; // start after the 70px navbar
         scroll-snap-type: y mandatory; // handles snap scrolling
+        scroll-behavior: smooth; // smooth scroll instead of instantaneous
 
         > * { // for each component in sections div
             width: 100vw;
