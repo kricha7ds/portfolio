@@ -1,5 +1,5 @@
 import "./navbar.scss"
-import {Person, Email} from "@material-ui/icons"
+import {Person, Email, GitHub} from "@material-ui/icons"
 
 export default function Navbar({ menuOpen, setMenuOpen }) {
     return (
@@ -14,6 +14,10 @@ export default function Navbar({ menuOpen, setMenuOpen }) {
                     <div className="itemContainer">
                         <Email className="icon"/>
                         <span>kar3@ualberta.ca</span>
+                    </div>
+                    <div className="itemContainer">
+                        <GitHub className="icon"/>
+                        <span><a href="https://github.com/kricha7ds">kricha7ds</a></span>
                     </div>
                 </div>
                 <div className="right">
