@@ -9,7 +9,7 @@ export default function Intro() {
                 <h2>Junior<span></span></h2>
             </div>
             <div className="credit-text-on-image">
-                <p className="credit">photo by Anton Atanasov on Pexels.com.</p>
+                <p className="credit">photo by <span><a href="https://www.pexels.com/@blooddrainer">Anton Atanasov</a></span> on Pexels.com.</p>
             </div>
         </div>
     )
