@@ -1,3 +1,35 @@
 .about {
-    background-color: lightcoral;
+    background-color: white;
+    display: flex;
+
+    .left {
+        flex: 0.4;
+        background-color: lightyellow;
+        overflow: hidden;
+
+
+        .imgContainer {
+            width: 700px;
+            height: 700px;
+            display: flex;
+            margin: 60px 20px;
+            align-items: flex-start;
+
+            img {
+                height: 50%;
+                border-radius: 50%;
+                transform: scaleX(-1);
+            }
+        }
+
+        .caption {
+            justify-content: center;
+            align-items: center;
+        }
+    }
+
+    .right {
+        flex: 0.6;
+        background-color: lightsalmon;
+    }
 }
