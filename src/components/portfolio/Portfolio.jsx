@@ -1,11 +1,16 @@
 import PortfolioList from "../portfolioList/PortfolioList";
 import "./portfolio.scss";
-import { useState } from "react";
+import { useEffect, useState } from "react";
+import { featuredPortfolio,
+    smwebPortfolio,
+    lgwebPortfolio,
+    datavisPortfolio } from "../../data";
 
 
 
 export default function Portfolio() {
     const [selected, setSelected] = useState("featured");
+    const [data, setData] = useState([]);
     const list = [
         {
             id: "featured",
@@ -24,6 +29,26 @@ export default function Portfolio() {
             title: "Data Visualization",
         },
     ];
+
+    useEffect(() =>{
+        switch(selected) {
+            case "featured":
+                setData(featuredPortfolio);
+                break;
+            case "smwebapp":
+                setData(smwebPortfolio);
+                break;
+            case "lgwebapp":
+                setData(lgwebPortfolio);
+                break;
+            case "datavis":
+                setData(datavisPortfolio);
+                break;
+            default:
+                setData(featuredPortfolio);
+        }
+    }, [selected]);
+
     return (
         <div className="portfolio" id="portfolio">
             <h1>My Portfolio</h1>
@@ -38,30 +63,12 @@ export default function Portfolio() {
                 ))}
             </ul>
             <div className="container">
-                <div className="item">
-                    <img src="https://assets.awwwards.com/awards/submissions/2017/07/596106479e6b3.jpg" alt=""></img>
-                    <h3>Music App</h3>
-                </div>
-                <div className="item">
-                    <img src="https://assets.awwwards.com/awards/submissions/2017/07/596106479e6b3.jpg" alt=""></img>
-                    <h3>Music App</h3>
-                </div>
-                <div className="item">
-                    <img src="https://assets.awwwards.com/awards/submissions/2017/07/596106479e6b3.jpg" alt=""></img>
-                    <h3>Music App</h3>
-                </div>
-                <div className="item">
-                    <img src="https://assets.awwwards.com/awards/submissions/2017/07/596106479e6b3.jpg" alt=""></img>
-                    <h3>Music App</h3>
-                </div>
-                <div className="item">
-                    <img src="https://assets.awwwards.com/awards/submissions/2017/07/596106479e6b3.jpg" alt=""></img>
-                    <h3>Music App</h3>
-                </div>
-                <div className="item">
-                    <img src="https://assets.awwwards.com/awards/submissions/2017/07/596106479e6b3.jpg" alt=""></img>
-                    <h3>Music App</h3>
-                </div>
+                {data.map((d) => (
+                    <div className="item">
+                        <img src={d.img} alt=""></img>
+                        <h3>{d.title}</h3>
+                    </div>
+                ))}
             </div>
         </div>
     )
