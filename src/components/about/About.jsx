@@ -17,7 +17,7 @@ export default function About() {
             <div className="right">
                 <div className="wrapper">
                     <p className="greeting"><em>Welcome! Bienvenue!</em></p>
-                    <p>Thank you for stopping by - I'm thrilled to have you here!</p>
+                    <p className="caption"><em>Thank you for stopping by - I'm thrilled to have you here!</em></p>
                     <p>
                         I am a New Grad looking to begin my professional career in a tech role. 
                         I am eager to join a team that is willing to provide mentorship, but also offers
@@ -33,9 +33,11 @@ export default function About() {
                         Feel free to browse the remainder of this page to see visuals for some of the projects 
                         I have worked on to date.            
                     </p>
-                    <p>
-                        For a more descriptive explanation of my technical skills, please download my resume. 
-                        Again, thank you for visiting my page.
+                    <p className="closing">
+                        {/* For a formal copy of my resume, please send me an inquiry here or via direct email. <br /> */}
+                        For a formal copy of my resume, or any other inquiries, please contact me <span className="sClose"><a href="#contact">here</a></span> or via direct email. <br />
+                        {/* For a more descriptive explanation of my technical skills, please download my resume.  */}
+                        {/* Again, thank you for visiting my page. */}
                     </p>
                 </div>
             </div>
