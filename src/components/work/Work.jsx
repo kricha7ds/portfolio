@@ -1,23 +1,31 @@
 import "./work.scss";
-import {PhoneAndroidOutlined} from "@material-ui/icons";
+// import { PhoneAndroidOutlined } from "@material-ui/icons";
+import { workItems } from "../../workExp";
+import { useState } from "react";
 
 export default function Work() {
+    const [currentSlide, setCurrentSlide] = useState(0) // default to 0'th item
+    const handleClick = (dir)=>{
+        dir === "left" ? setCurrentSlide(currentSlide > 0 ? currentSlide - 1 : workItems.length - 1) :
+        setCurrentSlide(currentSlide < workItems.length - 1 ? currentSlide + 1 : 0);
+    }
     return (
         <div className="work" id="work">
-            <div className="slider">
+            <div className="slider" style={{transform:`translateX(-${currentSlide * 100}vw)`}}>
+            {workItems.map((d) => (
                 <div className="container">
                     <div className="item">
                         <div className="left">
                             <div className="leftContainer">
                                 <div className="imgContainer">
-                                    <PhoneAndroidOutlined className="img"/>
+                                    <img src={d.img} alt=""/>
+                                    {/* <PhoneAndroidOutlined className="img"/> */}
                                 </div>
-                                <h2>Title</h2>
-                                <h5>Employer</h5>
-                                <p className="date"><em>Date of employment.</em></p>
+                                <h2>{d.title}</h2>
+                                <h5>{d.emp}</h5>
+                                <p className="date"><em>{d.date}</em></p>
                                 <p>
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-                                    Cras sed libero at nibh placerat mollis. Aenean at bibendum nibh.
+                                    {d.desc}
                                 </p>
                                 <span>Projects</span>
                             </div>
@@ -34,7 +42,10 @@ export default function Work() {
                         </div>
                     </div>
                 </div>
+            ))}
             </div>
+            <img src ="assets/arrow.png" className="arrow left" alt="" onClick={() => handleClick("left")}/>
+            <img src ="assets/arrow.png" className="arrow right" alt="" onClick={() => handleClick("right")}/>
         </div>
     )
 }
