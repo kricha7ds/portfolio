@@ -5,6 +5,9 @@ import { useState } from "react";
 
 export default function Work() {
     const [currentSlide, setCurrentSlide] = useState(0) // default to 0'th item
+    /* Function handles both "Next" actions in either direction (left or right) for slider. 
+        - if currentSlide index < items.len then just go to the next item 
+        - when currentSlide index >= items.len, go to item at index 0 */
     const handleClick = (dir)=>{
         dir === "left" ? setCurrentSlide(currentSlide > 0 ? currentSlide - 1 : workItems.length - 1) :
         setCurrentSlide(currentSlide < workItems.length - 1 ? currentSlide + 1 : 0);
