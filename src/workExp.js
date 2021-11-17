@@ -6,7 +6,7 @@
       date: "Sep 2020 - Aug 2021",
       emp: "Suncor Energy Inc.",
       desc: "This is a description of my Suncor Co-op term.",
-      li: ["Bullet1", "Bullet2", "Bullet3"]
+      highlights: ["SuncorBullet1", "SuncorBullet2", "SuncorBullet3"]
     },
     {
         id: 2,
@@ -15,7 +15,7 @@
         date: "Oct 2019 - Mar 2020",
         emp: "EdTeKLA Research Group",
         desc: "This is a description of my term as a research assistant with EdTeKLA.",
-        li: ["Bullet1", "Bullet2", "Bullet3"]
+        highlights: ["EdTeKLABullet1", "EdTeKLABullet2", "EdTeKLABullet3"]
       },
       {
         id: 3,
@@ -24,6 +24,6 @@
         date: "Sep 2019 - Dec 2019",
         emp: "YegAccessibility",
         desc: "This is a description of my term as a developer for YegAccessibility.",
-        li: ["Bullet1", "Bullet2", "Bullet3"]
+        highlights: ["YegBullet1", "YegBullet2", "YegBullet3"]
       },
   ];
