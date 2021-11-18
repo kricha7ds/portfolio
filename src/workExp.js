@@ -5,8 +5,8 @@
       title: "Logistics Analyst, Developer",
       date: "Sep 2020 - Aug 2021",
       emp: "Suncor Energy Inc.",
-      desc: "This is a description of my Suncor Co-op term.",
-      highlights: ["SuncorBullet1", "SuncorBullet2", "SuncorBullet3"]
+      desc: "At Suncor I worked in Mine Operations providing application support for various processes and new projects.",
+      highlights: ["Optimize existing tools for metrics reporting", "Develop and support applications", "SuncorBullet3"]
     },
     {
         id: 2,

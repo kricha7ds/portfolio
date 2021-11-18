@@ -22,15 +22,11 @@ export default function Work() {
                             <div className="leftContainer">
                                 <div className="imgContainer">
                                     <img src={d.img} alt=""/>
-                                    {/* <PhoneAndroidOutlined className="img"/> */}
                                 </div>
                                 <h2>{d.title}</h2>
-                                <h5>{d.emp}</h5>
+                                <p><span className="badge">{d.emp}</span></p>
                                 <p className="date"><em>{d.date}</em></p>
-                                <p>
-                                    {d.desc}
-                                </p>
-                                <span>Projects</span>
+                                <p>{d.desc}</p>
                             </div>
                         </div>
                         <div className="right">
