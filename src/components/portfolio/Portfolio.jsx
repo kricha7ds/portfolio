@@ -4,7 +4,8 @@ import { useEffect, useState } from "react";
 import { featuredPortfolio,
     smwebPortfolio,
     lgwebPortfolio,
-    datavisPortfolio } from "../../data";
+    datavisPortfolio,
+    linkedSpacePortfolio } from "../../data";
 
 
 
@@ -28,6 +29,10 @@ export default function Portfolio() {
             id: "datavis",
             title: "Data Visualization",
         },
+        {
+            id: "lgwebapp2",
+            title: "LinkedSpace",
+        },
     ];
 
     useEffect(() =>{
@@ -43,6 +48,9 @@ export default function Portfolio() {
                 break;
             case "datavis":
                 setData(datavisPortfolio);
+                break;
+            case "lgwebapp2":
+                setData(linkedSpacePortfolio);
                 break;
             default:
                 setData(featuredPortfolio);

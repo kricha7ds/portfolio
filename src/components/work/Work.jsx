@@ -31,9 +31,9 @@ export default function Work() {
                         </div>
                         <div className="right">
                             <div className="rightContainer">
-                                <ul>
+                                <li>
                                     {d.highlights.map(point => <li key={point}> {point} </li>)}
-                                </ul>
+                                </li>
                             </div>
                         </div>
                     </div>

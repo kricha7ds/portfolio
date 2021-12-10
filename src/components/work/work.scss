@@ -1,7 +1,7 @@
 @import "../../global.scss" ;
 
 .work {
-    background-color: crimson;
+    background-color: white;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -38,8 +38,11 @@
 
             .item {
                 width: 700px;
-                height: 100%;
+                height: 98%;
                 background-color: white;
+                border-style: solid;
+                border-color: $mainColour;
+                border-width: medium;
                 border-radius: 20px;
                 display: flex;
                 align-items: center;
@@ -51,7 +54,7 @@
                     display: flex;
                     align-items: center;
                     justify-content: center;
-                    background-color: yellowgreen;
+                    background-color: white;
 
                     .leftContainer {
                         width: 90%;
@@ -64,7 +67,7 @@
                             width: 40px;
                             height: 40px;
                             border-radius: 50%;
-                            background-color: lightsalmon;
+                            background-color: rgba(115, 68, 158, 0.842);
                             display: flex;
                             align-items: center;
                             justify-content: center;
@@ -105,11 +108,13 @@
                     display: flex;
                     align-items: center;
                     justify-content: center;
-                    background-color: yellow;
+                    background-color: white;
+                    background: url("https://t4.ftcdn.net/jpg/02/80/97/87/360_F_280978711_G731MVbNhdQF7JqSMWtrcXwPQDtc1bL7.jpg");
+                    background-size: 400px;
 
                     .rightContainer {
                         width: 90%;
-                        height: 70%;
+                        height: 80%;
                         display: flex;
                         flex-direction: column;
                         justify-content: space-between;
@@ -119,6 +124,7 @@
                             align-items: center;
                             font-size: 15px;
                             padding: 10px 10px;
+                            list-style-type: none;
                             // margin: 10px 0px;
                             // color: $mainColour;
                         }

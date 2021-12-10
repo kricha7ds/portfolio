@@ -17,6 +17,12 @@ export const featuredPortfolio = [
     img:
       "assets/vis/P2_blur.png",
   },
+  {
+    id: 4,
+    title: "Social Distribution App",
+    img:
+      "assets/ls/local_posts.png",
+  },
 ];
 
 export const smwebPortfolio = [
@@ -100,5 +106,44 @@ export const datavisPortfolio = [
     title: "Interactive Dashboard",
     img:
       "assets/vis/P4_blur.png",
+  },
+];
+
+export const linkedSpacePortfolio = [
+  {
+    id: 1,
+    title: "Local Author Posts",
+    img:
+      "assets/ls/local_posts.png",
+  },
+  {
+    id: 2,
+    title: "Foreign Author Posts",
+    img:
+      "assets/ls/foreign_posts.png",
+  },
+  {
+    id: 3,
+    title: "Add a Post",
+    img:
+      "assets/ls/add_post.png",
+  },
+  {
+    id: 4,
+    title: "View Inbox",
+    img:
+      "assets/ls/inbox.png",
+  },
+  {
+    id: 5,
+    title: "Author Profile View",
+    img:
+      "assets/ls/profile.png",
+  },
+  {
+    id: 6,
+    title: "Share GitHub Activity",
+    img:
+      "assets/ls/github.png",
   },
 ];
