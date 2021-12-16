@@ -8,10 +8,6 @@ export default function Navbar({ menuOpen, setMenuOpen }) {
                 <div className="left">
                     <a href="#intro" className="logo">explore.</a>
                     <div className="itemContainer">
-                        <Person className="icon"/>
-                        <span>+1 780 271 4505</span>
-                    </div>
-                    <div className="itemContainer">
                         <Email className="icon"/>
                         <span>kar3@ualberta.ca</span>
                     </div>
